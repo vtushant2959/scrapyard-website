@@ -1,0 +1,14 @@
+{
+  "name": "SCRAPYARD — India's Smartest Scrap Marketplace",
+  "short_name": "SCRAPYARD",
+  "description": "Schedule free scrap pickup and get best rates for metal, plastic, paper, e-waste & industrial scrap.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#081018",
+  "theme_color": "#2CEB88",
+  "orientation": "portrait",
+  "icons": [
+    { "src": "/scrapyard-logo-w-bg.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/scrapyard-logo-w-bg.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
