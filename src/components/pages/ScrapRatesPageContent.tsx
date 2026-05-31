@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect, useCallback } from "react";
 import { motion } from "framer-motion";
-import { TrendingUp, TrendingDown, Minus, RefreshCw, Info, Truck, Search } from "lucide-react";
+import { RefreshCw, Info, Truck, Search } from "lucide-react";
 import Link from "next/link";
 
 interface Rate {
@@ -123,12 +123,9 @@ export function ScrapRatesPageContent() {
               <table className="w-full">
                 <thead>
                   <tr className="border-b border-dark-border bg-white/2">
-                    <th className="text-left px-6 py-4 text-xs font-semibold text-text-muted uppercase tracking-wider">#</th>
                     <th className="text-left px-6 py-4 text-xs font-semibold text-text-muted uppercase tracking-wider">Material</th>
                     <th className="text-left px-6 py-4 text-xs font-semibold text-text-muted uppercase tracking-wider hidden sm:table-cell">Category</th>
-                    <th className="text-right px-6 py-4 text-xs font-semibold text-text-muted uppercase tracking-wider">Rate</th>
-                    <th className="text-right px-6 py-4 text-xs font-semibold text-text-muted uppercase tracking-wider">Today</th>
-                    <th className="text-right px-6 py-4 text-xs font-semibold text-text-muted uppercase tracking-wider hidden md:table-cell">Trend</th>
+                    <th className="text-right px-6 py-4 text-xs font-semibold text-text-muted uppercase tracking-wider">Today's Rate</th>
                     <th className="text-right px-6 py-4 text-xs font-semibold text-text-muted uppercase tracking-wider">Action</th>
                   </tr>
                 </thead>
@@ -136,7 +133,7 @@ export function ScrapRatesPageContent() {
                   {loading
                     ? [...Array(8)].map((_, i) => (
                         <tr key={i} className="border-b border-dark-border/50">
-                          {[...Array(7)].map((__, j) => (
+                          {[...Array(4)].map((__, j) => (
                             <td key={j} className="px-6 py-4">
                               <div className="h-3 bg-white/5 rounded animate-pulse" />
                             </td>
@@ -146,7 +143,7 @@ export function ScrapRatesPageContent() {
                     : filtered.length === 0
                     ? (
                         <tr>
-                          <td colSpan={7} className="px-6 py-16 text-center">
+                          <td colSpan={4} className="px-6 py-16 text-center">
                             <p className="text-text-muted text-sm">
                               {rates.length === 0
                                 ? "No scrap rates have been added yet. Check back soon!"
@@ -162,7 +159,6 @@ export function ScrapRatesPageContent() {
                           transition={{ delay: i * 0.03 }}
                           className="border-b border-dark-border/50 hover:bg-white/2 transition-colors group"
                         >
-                          <td className="px-6 py-4 text-xs text-text-muted font-mono">{String(i + 1).padStart(2, "0")}</td>
                           <td className="px-6 py-4">
                             <span className="text-sm font-medium text-white group-hover:text-accent-glow transition-colors">
                               {item.name}
@@ -174,20 +170,11 @@ export function ScrapRatesPageContent() {
                           <td className="px-6 py-4 text-right">
                             <span className="text-base font-black text-white">₹{item.rate}</span>
                             <span className="text-xs text-text-muted ml-1">/{item.unit}</span>
-                          </td>
-                          <td className="px-6 py-4 text-right">
-                            <span className={`text-xs font-mono font-bold ${
-                              item.trend === "up" ? "text-accent-glow" : item.trend === "down" ? "text-red-400" : "text-text-muted"
-                            }`}>
-                              {item.change > 0 ? "+" : ""}{item.change}
-                            </span>
-                          </td>
-                          <td className="px-6 py-4 text-right hidden md:table-cell">
-                            {item.trend === "up"
-                              ? <TrendingUp className="w-4 h-4 text-accent-glow ml-auto" />
-                              : item.trend === "down"
-                              ? <TrendingDown className="w-4 h-4 text-red-400 ml-auto" />
-                              : <Minus className="w-4 h-4 text-text-muted ml-auto" />}
+                            {item.change !== 0 && (
+                              <span className={`ml-2 text-xs font-mono font-bold ${item.trend === "up" ? "text-accent-glow" : "text-red-400"}`}>
+                                {item.change > 0 ? "▲" : "▼"}{Math.abs(item.change)}
+                              </span>
+                            )}
                           </td>
                           <td className="px-6 py-4 text-right">
                             <Link href="/contact" className="text-xs font-semibold text-accent-glow hover:underline flex items-center gap-1 justify-end">
