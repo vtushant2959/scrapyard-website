@@ -5,10 +5,11 @@ import { Target, Eye, Leaf, Users, Award, TrendingUp, CheckCircle, ArrowRight } 
 import Link from "next/link";
 
 const team = [
-  { name: "Arjun Mehta", role: "CEO & Co-Founder", bg: "AM", description: "Ex-IIT Delhi. 10+ years in waste management and logistics." },
-  { name: "Priya Singh", role: "CTO & Co-Founder", bg: "PS", description: "Ex-Google engineer. Built enterprise logistics platforms." },
-  { name: "Rohit Sharma", role: "COO", bg: "RS", description: "Ex-McKinsey. Supply chain & operations expert." },
-  { name: "Kavita Nair", role: "Head of Sustainability", bg: "KN", description: "Environmental engineer. CPCB certified waste specialist." },
+  { name: "Aas Mohmmad Khan", role: "Founder", initials: "AK", email: "aasmohmmadkhan@scrapyard.co.in", description: "Visionary behind SCRAPYARD. Building India's smartest digital scrap ecosystem from the ground up." },
+  { name: "Sahil Khan", role: "Director & CEO", initials: "SK", email: null, description: "Leading SCRAPYARD's growth strategy, operations, and business development across India." },
+  { name: "Nizamuddin Khan", role: "Director", initials: "NK", email: null, description: "Overseeing business strategy, partnerships, and expansion into new markets." },
+  { name: "Virender Sitoria", role: "COO", initials: "VS", email: null, description: "Driving operational excellence, logistics, and on-ground pickup execution across all cities." },
+  { name: "Tushant Verma", role: "CTO", initials: "TV", email: "tushantverma@scrapyard.co.in", description: "Architecting SCRAPYARD's technology platform, digital infrastructure, and product innovation." },
 ];
 
 const milestones = [
@@ -115,16 +116,44 @@ export function AboutPageContent() {
               Meet the <span className="gradient-text">Team</span>
             </h2>
             <p className="text-text-muted text-center mb-10">The people building India&apos;s smartest scrap platform.</p>
+            {/* First row — Founder centred */}
+            <div className="flex justify-center mb-5">
+              {team.slice(0, 1).map((member, i) => (
+                <motion.div key={member.name} initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ delay: 0.5 }} className="w-full max-w-xs">
+                  <div className="glass-card rounded-2xl p-6 text-center hover:glow-border-green transition-all duration-300 border border-accent-glow/20">
+                    <div className="w-20 h-20 rounded-full flex items-center justify-center text-xl font-black text-accent-glow mx-auto mb-4"
+                      style={{ background: "linear-gradient(135deg, rgba(44,235,136,0.2), rgba(0,60,158,0.2))", fontFamily: "var(--font-syne)" }}>
+                      {member.initials}
+                    </div>
+                    <h4 className="text-lg font-black text-white mb-1" style={{ fontFamily: "var(--font-syne)" }}>{member.name}</h4>
+                    <p className="text-sm text-accent-glow font-bold mb-2">{member.role}</p>
+                    <p className="text-xs text-text-muted leading-relaxed mb-3">{member.description}</p>
+                    {member.email && (
+                      <a href={`mailto:${member.email}`} className="text-xs text-accent-glow/70 hover:text-accent-glow transition-colors font-mono">
+                        {member.email}
+                      </a>
+                    )}
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+            {/* Remaining 4 members */}
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
-              {team.map((member, i) => (
-                <motion.div key={member.name} initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ delay: 0.5 + i * 0.1 }}>
+              {team.slice(1).map((member, i) => (
+                <motion.div key={member.name} initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ delay: 0.6 + i * 0.1 }}>
                   <div className="glass-card rounded-2xl p-6 text-center hover:glow-border-green transition-all duration-300">
-                    <div className="w-16 h-16 rounded-full bg-gradient-to-br from-accent-glow/20 to-primary-blue/20 flex items-center justify-center text-lg font-black text-accent-glow mx-auto mb-4" style={{ fontFamily: "var(--font-syne)" }}>
-                      {member.bg}
+                    <div className="w-16 h-16 rounded-full flex items-center justify-center text-lg font-black text-accent-glow mx-auto mb-4"
+                      style={{ background: "linear-gradient(135deg, rgba(44,235,136,0.15), rgba(0,60,158,0.15))", fontFamily: "var(--font-syne)" }}>
+                      {member.initials}
                     </div>
                     <h4 className="text-base font-bold text-white mb-1" style={{ fontFamily: "var(--font-syne)" }}>{member.name}</h4>
                     <p className="text-xs text-accent-glow font-semibold mb-2">{member.role}</p>
-                    <p className="text-xs text-text-muted leading-relaxed">{member.description}</p>
+                    <p className="text-xs text-text-muted leading-relaxed mb-2">{member.description}</p>
+                    {member.email && (
+                      <a href={`mailto:${member.email}`} className="text-xs text-accent-glow/70 hover:text-accent-glow transition-colors font-mono break-all">
+                        {member.email}
+                      </a>
+                    )}
                   </div>
                 </motion.div>
               ))}
