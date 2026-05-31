@@ -2,6 +2,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { connectDB } from "@/lib/mongodb";
 import { Lead } from "@/models/Lead";
+import { sendLeadAlert } from "@/lib/mailer";
 
 export async function POST(req: NextRequest) {
   try {
@@ -14,6 +15,11 @@ export async function POST(req: NextRequest) {
 
     await connectDB();
     await Lead.create({ name, phone, email, city, businessType, scrapType, message, source: "website" });
+
+    // Send email alert — non-blocking so form doesn't fail if email fails
+    sendLeadAlert({ name, phone, email, city, businessType, scrapType, message }).catch(
+      (err) => console.error("Lead email failed:", err)
+    );
 
     return NextResponse.json({ success: true, message: "We will contact you within 2 hours!" });
   } catch (error) {

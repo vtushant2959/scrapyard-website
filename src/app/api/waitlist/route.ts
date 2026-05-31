@@ -2,6 +2,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { connectDB } from "@/lib/mongodb";
 import { Waitlist } from "@/models/Waitlist";
+import { sendWaitlistAlert } from "@/lib/mailer";
 
 export async function POST(req: NextRequest) {
   try {
@@ -18,6 +19,11 @@ export async function POST(req: NextRequest) {
       { email },
       { name, phone, city, userType },
       { upsert: true, new: true }
+    );
+
+    // Send email alert — non-blocking
+    sendWaitlistAlert({ name, phone, email, city, userType }).catch(
+      (err) => console.error("Waitlist email failed:", err)
     );
 
     return NextResponse.json({ success: true, message: "You're on the waitlist!" });
