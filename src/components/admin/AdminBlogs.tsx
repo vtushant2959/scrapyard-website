@@ -12,6 +12,7 @@ interface Blog {
   content: string;
   category: string;
   author: string;
+  coverImage: string;
   status: "draft" | "published";
   views: number;
   createdAt: string;
@@ -282,14 +283,24 @@ export function AdminBlogs() {
                     className="form-input w-full" />
                 </div>
                 <div>
+                  <label className="text-xs text-text-muted mb-1.5 block">Cover Image URL</label>
+                  <input value={editing.coverImage ?? ""} onChange={(e) => setEditing({ ...editing, coverImage: e.target.value })}
+                    placeholder="https://example.com/image.jpg" className="form-input w-full" />
+                  {editing.coverImage && (
+                    <img src={editing.coverImage} alt="Preview" className="mt-2 w-full h-40 object-cover rounded-xl border border-dark-border" onError={(e) => (e.currentTarget.style.display = "none")} />
+                  )}
+                  <p className="text-xs text-text-muted mt-1">Upload image to <a href="https://imgur.com" target="_blank" rel="noopener noreferrer" className="text-accent-glow hover:underline">imgur.com</a> or any image host, paste URL here.</p>
+                </div>
+                <div>
                   <label className="text-xs text-text-muted mb-1.5 block">Excerpt (shown in blog list)</label>
                   <textarea value={editing.excerpt ?? ""} onChange={(e) => setEditing({ ...editing, excerpt: e.target.value })}
                     rows={3} placeholder="Short description…" className="form-input w-full resize-none" />
                 </div>
                 <div>
                   <label className="text-xs text-text-muted mb-1.5 block">Content (Markdown supported)</label>
+                  <p className="text-xs text-text-muted/60 mb-1.5">Use **bold**, # Heading, ## Subheading, - list item, | table | format |</p>
                   <textarea value={editing.content ?? ""} onChange={(e) => setEditing({ ...editing, content: e.target.value })}
-                    rows={14} placeholder="Write your blog content here…" className="form-input w-full resize-none font-mono text-xs" />
+                    rows={16} placeholder="Write your blog content here…" className="form-input w-full resize-none font-mono text-xs" />
                 </div>
               </div>
             </motion.div>

@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import {
   LayoutDashboard, Users, Truck, TrendingUp, FileText,
-  Smartphone, BarChart3, Settings, Menu, X, LogOut,
+  Smartphone, BarChart3, Settings, Menu, X, LogOut, Star,
 } from "lucide-react";
 
 import { AdminDashboard }   from "@/components/admin/AdminDashboard";
@@ -14,6 +14,7 @@ import { AdminScrapRates }  from "@/components/admin/AdminScrapRates";
 import { AdminBlogs }       from "@/components/admin/AdminBlogs";
 import { AdminWaitlist }    from "@/components/admin/AdminWaitlist";
 import { AdminAnalytics }   from "@/components/admin/AdminAnalytics";
+import { AdminReviews }     from "@/components/admin/AdminReviews";
 
 /* ─── nav config ─────────────────────────────────────────────── */
 const navItems = [
@@ -24,6 +25,7 @@ const navItems = [
   { icon: FileText,        label: "Blogs"      },
   { icon: Smartphone,      label: "Waitlist"   },
   { icon: BarChart3,       label: "Analytics"  },
+  { icon: Star,            label: "Reviews"    },
 ];
 
 /* ─── settings stub ──────────────────────────────────────────── */
@@ -248,6 +250,7 @@ export default function AdminPage() {
               {activeNav === "Blogs"       && <AdminBlogs />}
               {activeNav === "Waitlist"    && <AdminWaitlist />}
               {activeNav === "Analytics"   && <AdminAnalytics />}
+              {activeNav === "Reviews"     && <AdminReviews />}
               {activeNav === "Settings"    && <AdminSettings />}
             </motion.div>
           </AnimatePresence>

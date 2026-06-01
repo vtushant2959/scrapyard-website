@@ -1,7 +1,8 @@
 "use client";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import Link from "next/link";
 import { ChevronLeft, ChevronRight, Star, Quote } from "lucide-react";
 
 const testimonials = [
@@ -73,17 +74,34 @@ const testimonials = [
   },
 ];
 
+interface DBReview { _id: string; name: string; city: string; rating: number; review: string; scrapType: string; }
+
 export function Testimonials() {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.1 });
   const [current, setCurrent] = useState(0);
+  const [dbReviews, setDbReviews] = useState<DBReview[]>([]);
 
-  const prev = () => setCurrent((c) => (c - 1 + testimonials.length) % testimonials.length);
-  const next = () => setCurrent((c) => (c + 1) % testimonials.length);
+  useEffect(() => {
+    fetch("/api/reviews?featured=true&limit=6")
+      .then((r) => r.json())
+      .then((d) => { if (Array.isArray(d) && d.length > 0) setDbReviews(d); })
+      .catch(() => {});
+  }, []);
+
+  // Use DB reviews if available, otherwise fall back to static
+  const source = dbReviews.length >= 3 ? dbReviews.map((r) => ({
+    name: r.name, role: r.scrapType || "Customer", company: r.city,
+    avatar: r.name.split(" ").map((w: string) => w[0]).join("").slice(0, 2).toUpperCase(),
+    rating: r.rating, text: r.review, amount: "", period: "", color: "#2CEB88",
+  })) : testimonials;
+
+  const prev = () => setCurrent((c) => (c - 1 + source.length) % source.length);
+  const next = () => setCurrent((c) => (c + 1) % source.length);
 
   const visible = [
-    testimonials[current % testimonials.length],
-    testimonials[(current + 1) % testimonials.length],
-    testimonials[(current + 2) % testimonials.length],
+    source[current % source.length],
+    source[(current + 1) % source.length],
+    source[(current + 2) % source.length],
   ];
 
   return (
@@ -175,20 +193,20 @@ export function Testimonials() {
           >
             <Quote className="w-8 h-8 mb-4 text-accent-glow opacity-40" />
             <p className="text-sm text-silver leading-relaxed mb-4 italic">
-              &ldquo;{testimonials[current].text}&rdquo;
+              &ldquo;{source[current % source.length].text}&rdquo;
             </p>
             <div className="flex items-center gap-1 mb-4">
-              {[...Array(testimonials[current].rating)].map((_, j) => (
+              {[...Array(source[current % source.length].rating)].map((_, j) => (
                 <Star key={j} className="w-4 h-4 text-yellow-400 fill-yellow-400" />
               ))}
             </div>
             <div className="flex items-center gap-3 pt-4 border-t border-dark-border">
               <div className="w-10 h-10 rounded-full bg-accent-glow/15 flex items-center justify-center text-xs font-bold text-accent-glow">
-                {testimonials[current].avatar}
+                {source[current % source.length].avatar}
               </div>
               <div>
-                <p className="text-sm font-bold text-white">{testimonials[current].name}</p>
-                <p className="text-xs text-text-muted">{testimonials[current].role}</p>
+                <p className="text-sm font-bold text-white">{source[current % source.length].name}</p>
+                <p className="text-xs text-text-muted">{source[current % source.length].role}</p>
               </div>
             </div>
           </motion.div>
@@ -203,7 +221,7 @@ export function Testimonials() {
             <ChevronLeft className="w-5 h-5" />
           </button>
           <div className="flex items-center gap-1.5">
-            {testimonials.map((_, i) => (
+            {source.map((_, i) => (
               <button
                 key={i}
                 onClick={() => setCurrent(i)}
@@ -219,6 +237,17 @@ export function Testimonials() {
           >
             <ChevronRight className="w-5 h-5" />
           </button>
+        </div>
+
+        {/* CTA to reviews page */}
+        <div className="flex flex-wrap gap-3 justify-center mt-8">
+          <Link href="/reviews" className="flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold bg-white/5 border border-dark-border text-silver hover:text-white hover:border-accent-glow/30 transition-all">
+            <Star className="w-4 h-4 text-yellow-400 fill-yellow-400" />
+            See All Reviews
+          </Link>
+          <Link href="/reviews#write" className="btn-primary text-sm px-5 py-2.5">
+            Write a Review
+          </Link>
         </div>
       </div>
     </section>
