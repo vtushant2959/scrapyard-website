@@ -1,114 +1,108 @@
 "use client";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { motion, useMotionValue, useSpring } from "framer-motion";
 
 export function CustomCursor() {
-  const cursorX = useMotionValue(-100);
-  const cursorY = useMotionValue(-100);
-  const trailX = useMotionValue(-100);
-  const trailY = useMotionValue(-100);
+  const mouseX = useMotionValue(-100);
+  const mouseY = useMotionValue(-100);
 
-  const springConfig = { damping: 25, stiffness: 300, mass: 0.5 };
-  const trailSpringConfig = { damping: 35, stiffness: 200, mass: 0.8 };
+  // Ring follows with soft spring lag
+  const ringX = useSpring(mouseX, { damping: 22, stiffness: 180, mass: 0.6 });
+  const ringY = useSpring(mouseY, { damping: 22, stiffness: 180, mass: 0.6 });
 
-  const springX = useSpring(cursorX, springConfig);
-  const springY = useSpring(cursorY, springConfig);
-  const trailSpringX = useSpring(trailX, trailSpringConfig);
-  const trailSpringY = useSpring(trailY, trailSpringConfig);
-
-  const [isHovering, setIsHovering] = useState(false);
-  const [isClicking, setIsClicking] = useState(false);
-  const [isOnButton, setIsOnButton] = useState(false);
+  const [state, setState] = useState<"default" | "hover" | "click" | "text">("default");
+  const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    const onMouseMove = (e: MouseEvent) => {
-      cursorX.set(e.clientX);
-      cursorY.set(e.clientY);
-      setTimeout(() => {
-        trailX.set(e.clientX);
-        trailY.set(e.clientY);
-      }, 80);
+    const move = (e: MouseEvent) => {
+      mouseX.set(e.clientX);
+      mouseY.set(e.clientY);
+      if (!visible) setVisible(true);
     };
 
-    const onMouseDown = () => setIsClicking(true);
-    const onMouseUp = () => setIsClicking(false);
+    const down = () => setState("click");
+    const up   = () => setState((s) => (s === "click" ? "default" : s));
 
-    const onMouseOver = (e: MouseEvent) => {
-      const target = e.target as HTMLElement;
-      const isInteractive =
-        target.closest("a") ||
-        target.closest("button") ||
-        target.closest("[data-cursor-hover]") ||
-        target.closest("input") ||
-        target.closest("textarea") ||
-        target.closest("select");
-      setIsHovering(!!isInteractive);
-      setIsOnButton(!!(target.closest("button") || target.closest("a")));
+    const over = (e: MouseEvent) => {
+      const t = e.target as HTMLElement;
+      if (t.closest("button") || t.closest("a")) { setState("hover"); return; }
+      if (t.closest("input") || t.closest("textarea") || t.closest("select")) { setState("text"); return; }
+      setState("default");
     };
 
-    window.addEventListener("mousemove", onMouseMove);
-    window.addEventListener("mousedown", onMouseDown);
-    window.addEventListener("mouseup", onMouseUp);
-    window.addEventListener("mouseover", onMouseOver);
+    const leave = () => setVisible(false);
+
+    window.addEventListener("mousemove", move);
+    window.addEventListener("mousedown", down);
+    window.addEventListener("mouseup",   up);
+    window.addEventListener("mouseover", over);
+    document.documentElement.addEventListener("mouseleave", leave);
 
     return () => {
-      window.removeEventListener("mousemove", onMouseMove);
-      window.removeEventListener("mousedown", onMouseDown);
-      window.removeEventListener("mouseup", onMouseUp);
-      window.removeEventListener("mouseover", onMouseOver);
+      window.removeEventListener("mousemove", move);
+      window.removeEventListener("mousedown", down);
+      window.removeEventListener("mouseup",   up);
+      window.removeEventListener("mouseover", over);
+      document.documentElement.removeEventListener("mouseleave", leave);
     };
-  }, [cursorX, cursorY, trailX, trailY]);
+  }, [mouseX, mouseY, visible]);
+
+  // Hide on touch devices
+  if (typeof window !== "undefined" && window.matchMedia("(hover: none)").matches) return null;
 
   return (
     <>
-      {/* Trail circle */}
+      {/* Outer ring — lags behind cursor */}
       <motion.div
-        className="fixed top-0 left-0 pointer-events-none z-[9999] rounded-full"
-        style={{
-          x: trailSpringX,
-          y: trailSpringY,
-          translateX: "-50%",
-          translateY: "-50%",
-        }}
+        className="fixed top-0 left-0 pointer-events-none z-[9998]"
+        style={{ x: ringX, y: ringY, translateX: "-50%", translateY: "-50%" }}
+        animate={{ opacity: visible ? 1 : 0 }}
       >
         <motion.div
-          className="rounded-full border"
+          className="rounded-full"
           animate={{
-            width: isHovering ? 48 : 36,
-            height: isHovering ? 48 : 36,
-            borderColor: isOnButton
-              ? "rgba(44,235,136,0.8)"
-              : "rgba(44,235,136,0.3)",
-            backgroundColor: isClicking
-              ? "rgba(44,235,136,0.1)"
-              : "transparent",
-            boxShadow: isHovering
-              ? "0 0 20px rgba(44,235,136,0.4)"
-              : "0 0 8px rgba(44,235,136,0.2)",
+            width:  state === "hover" ? 40 : state === "click" ? 28 : 32,
+            height: state === "hover" ? 40 : state === "click" ? 28 : 32,
+            borderWidth: state === "hover" ? 1.5 : 1,
+            borderColor:
+              state === "hover"  ? "rgba(44,235,136,0.9)" :
+              state === "click"  ? "rgba(44,235,136,0.6)" :
+              state === "text"   ? "rgba(200,205,213,0.5)" :
+                                   "rgba(44,235,136,0.35)",
+            borderStyle: "solid",
+            backgroundColor:
+              state === "hover" ? "rgba(44,235,136,0.06)" :
+              state === "click" ? "rgba(44,235,136,0.12)" :
+                                  "transparent",
+            boxShadow:
+              state === "hover" ? "0 0 16px rgba(44,235,136,0.25)" :
+              state === "click" ? "0 0 10px rgba(44,235,136,0.3)" :
+                                  "none",
           }}
-          transition={{ type: "spring", damping: 20, stiffness: 300 }}
+          transition={{ type: "spring", damping: 18, stiffness: 260, mass: 0.4 }}
         />
       </motion.div>
 
-      {/* Main dot */}
+      {/* Inner dot — follows cursor exactly */}
       <motion.div
-        className="fixed top-0 left-0 pointer-events-none z-[9999] rounded-full"
-        style={{
-          x: springX,
-          y: springY,
-          translateX: "-50%",
-          translateY: "-50%",
-        }}
+        className="fixed top-0 left-0 pointer-events-none z-[9999]"
+        style={{ x: mouseX, y: mouseY, translateX: "-50%", translateY: "-50%" }}
+        animate={{ opacity: visible ? 1 : 0 }}
       >
         <motion.div
-          className="rounded-full bg-accent-glow"
+          className="rounded-full"
           animate={{
-            width: isClicking ? 6 : 8,
-            height: isClicking ? 6 : 8,
-            opacity: isHovering ? 0 : 1,
-            boxShadow: "0 0 8px rgba(44,235,136,0.8)",
+            width:  state === "hover" ? 5 : state === "click" ? 3 : 4,
+            height: state === "hover" ? 5 : state === "click" ? 3 : 4,
+            backgroundColor:
+              state === "text" ? "rgba(200,205,213,0.9)" : "#2CEB88",
+            opacity: state === "hover" ? 0.7 : 1,
+            boxShadow:
+              state === "hover" ? "0 0 6px rgba(44,235,136,0.9)" :
+              state === "click" ? "0 0 4px rgba(44,235,136,0.7)" :
+                                  "0 0 5px rgba(44,235,136,0.6)",
           }}
-          transition={{ duration: 0.15 }}
+          transition={{ duration: 0.12 }}
         />
       </motion.div>
     </>
