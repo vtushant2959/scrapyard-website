@@ -44,7 +44,7 @@ export function AboutPageContent() {
               <span className="gradient-text">Scrap Economy</span>
             </h1>
             <p className="text-lg text-text-muted leading-relaxed max-w-2xl mx-auto">
-              India generates 62 million tonnes of waste annually. We built SCRAPYARD to turn that challenge into an opportunity — for citizens, businesses, and the planet.
+              India generates 62 million tonnes of waste annually. We built SCRAPYARD to turn that challenge into an opportunity - for citizens, businesses, and the planet.
             </p>
           </motion.div>
         </div>
@@ -55,7 +55,7 @@ export function AboutPageContent() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-3 gap-6 mb-16">
             {[
-              { icon: Target, title: "Our Mission", color: "#2CEB88", text: "To make scrap selling effortless, transparent, and rewarding for every Indian — from households to factories — while building a sustainable recycling ecosystem that benefits our planet." },
+              { icon: Target, title: "Our Mission", color: "#2CEB88", text: "To make scrap selling effortless, transparent, and rewarding for every Indian - from households to factories - while building a sustainable recycling ecosystem that benefits our planet." },
               { icon: Eye, title: "Our Vision", color: "#003C9E", text: "To become India's most trusted technology-driven waste-to-value platform, processing 1 million tonnes of recyclable material annually by 2030 across every major Indian city." },
               { icon: Leaf, title: "Sustainability", color: "#27AE60", text: "Every action we take is guided by our commitment to a greener India. We work with CPCB-certified recyclers, follow e-waste regulations, and track our environmental impact with full transparency." },
             ].map((item, i) => (
@@ -116,7 +116,7 @@ export function AboutPageContent() {
               Meet the <span className="gradient-text">Team</span>
             </h2>
             <p className="text-text-muted text-center mb-10">The people building India&apos;s smartest scrap platform.</p>
-            {/* First row — Founder centred */}
+            {/* First row - Founder centred */}
             <div className="flex justify-center mb-5">
               {team.slice(0, 1).map((member, i) => (
                 <motion.div key={member.name} initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ delay: 0.5 }} className="w-full max-w-xs">

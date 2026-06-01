@@ -3,8 +3,10 @@ import { MetadataRoute } from "next";
 const baseUrl = "https://scrapyard.co.in";
 
 const cities = [
-  "delhi", "mumbai", "faridabad", "noida", "gurgaon",
-  "ghaziabad", "bangalore", "hyderabad", "chennai", "pune",
+  "delhi", "mumbai", "faridabad", "noida", "gurgaon", "ghaziabad",
+  "bangalore", "hyderabad", "chennai", "pune", "jaipur", "jodhpur",
+  "meerut", "lucknow", "ahmedabad", "surat", "kanpur", "nagpur",
+  "indore", "bhopal",
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
