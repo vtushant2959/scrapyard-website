@@ -4,7 +4,7 @@ import { Footer } from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
   title: "Privacy Policy | SCRAPYARD",
-  description: "SCRAPYARD Privacy Policy — How we collect, use, and protect your personal information.",
+  description: "SCRAPYARD Privacy Policy - How we collect, use, and protect your personal information.",
   alternates: { canonical: "https://scrapyard.co.in/privacy-policy" },
 };
 

@@ -27,7 +27,7 @@ const steps = [
     icon: Scale,
     title: "Instant Weight Verification",
     description:
-      "Transparent digital weighing at your doorstep. You see the weight, we show the calculation — no surprises.",
+      "Transparent digital weighing at your doorstep. You see the weight, we show the calculation - no surprises.",
     color: "#003C9E",
     badge: "Transparent",
   },
@@ -36,7 +36,7 @@ const steps = [
     icon: Banknote,
     title: "Instant Payment",
     description:
-      "Get paid instantly via UPI, bank transfer, or cash. No delays, no excuses — payment in 60 seconds.",
+      "Get paid instantly via UPI, bank transfer, or cash. No delays, no excuses - payment in 60 seconds.",
     color: "#2CEB88",
     badge: "Instant UPI",
   },

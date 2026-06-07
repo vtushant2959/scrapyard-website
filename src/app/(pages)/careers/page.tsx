@@ -4,7 +4,7 @@ import { Footer } from "@/components/layout/Footer";
 import { CareersPageContent } from "@/components/pages/CareersPageContent";
 
 export const metadata: Metadata = {
-  title: "Careers at SCRAPYARD — Join India's Fastest Growing Scrap Startup",
+  title: "Careers at SCRAPYARD - Join India's Fastest Growing Scrap Startup",
   description:
     "Join SCRAPYARD and help build India's smartest scrap marketplace. Open positions in technology, operations, sales, and logistics.",
   alternates: { canonical: "https://scrapyard.co.in/careers" },

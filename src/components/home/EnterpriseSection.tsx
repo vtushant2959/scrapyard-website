@@ -59,7 +59,7 @@ export function EnterpriseSection() {
                 </h2>
 
                 <p className="text-text-muted leading-relaxed mb-6">
-                  From small offices to large manufacturing plants — our enterprise platform handles scrap at any scale with full compliance, documentation, and dedicated support.
+                  From small offices to large manufacturing plants - our enterprise platform handles scrap at any scale with full compliance, documentation, and dedicated support.
                 </p>
 
                 <div className="grid grid-cols-2 gap-2 mb-8">

@@ -19,7 +19,7 @@ const Blog = mongoose.models.Blog ?? mongoose.model("Blog", BlogSchema);
 
 const blogs = [
   {
-    title: "Iron Scrap Price Today in Delhi — Live Rates & Selling Tips",
+    title: "Iron Scrap Price Today in Delhi - Live Rates & Selling Tips",
     slug: "iron-scrap-price-today-delhi",
     category: "Metal Prices",
     author: "SCRAPYARD Team",
@@ -28,7 +28,7 @@ const blogs = [
     metaDescription: "Today's iron scrap price in Delhi is ₹28–35/kg. Get live iron scrap rates, selling tips, and book free doorstep pickup with SCRAPYARD.",
     content: `# Iron Scrap Price Today in Delhi
 
-Iron scrap is one of the most commonly sold materials in Delhi NCR. Whether you have old iron furniture, steel bars, MS pipes, or machinery scrap — SCRAPYARD offers the **best iron scrap rate in Delhi** with free doorstep pickup.
+Iron scrap is one of the most commonly sold materials in Delhi NCR. Whether you have old iron furniture, steel bars, MS pipes, or machinery scrap - SCRAPYARD offers the **best iron scrap rate in Delhi** with free doorstep pickup.
 
 ## Today's Iron Scrap Rate in Delhi
 
@@ -45,18 +45,18 @@ Iron scrap is one of the most commonly sold materials in Delhi NCR. Whether you 
 ## Why Iron Scrap Prices Change Daily
 
 Iron scrap prices in Delhi fluctuate based on:
-- **Global steel demand** — when steel plants need raw material, rates go up
-- **Import/export policies** — government policy changes affect rates
-- **Seasonal demand** — construction season drives higher rates
-- **Scrap quality** — heavy melting scrap (HMS) always commands better rates than light scrap
+- **Global steel demand** - when steel plants need raw material, rates go up
+- **Import/export policies** - government policy changes affect rates
+- **Seasonal demand** - construction season drives higher rates
+- **Scrap quality** - heavy melting scrap (HMS) always commands better rates than light scrap
 
 ## How to Get the Best Iron Scrap Rate in Delhi
 
-1. **Separate your scrap** — keep heavy iron separate from light iron. Mixed scrap gets lower rates.
-2. **Remove attachments** — plastic, rubber, or wood attached to iron reduces the rate.
-3. **Quantity matters** — larger quantities (500kg+) get better rates.
-4. **Sell to the right buyer** — SCRAPYARD connects you directly with buyers who compete for your scrap.
-5. **Time it right** — check our live rate page daily. Sell when rates are at a monthly high.
+1. **Separate your scrap** - keep heavy iron separate from light iron. Mixed scrap gets lower rates.
+2. **Remove attachments** - plastic, rubber, or wood attached to iron reduces the rate.
+3. **Quantity matters** - larger quantities (500kg+) get better rates.
+4. **Sell to the right buyer** - SCRAPYARD connects you directly with buyers who compete for your scrap.
+5. **Time it right** - check our live rate page daily. Sell when rates are at a monthly high.
 
 ## Book Free Iron Scrap Pickup in Delhi
 
@@ -78,19 +78,19 @@ A: We pick up from as little as 10kg. No minimum order.
 A: Yes! We buy all iron/steel items including doors, windows, grills, almirahs, and furniture.
 
 **Q: How is payment made?**
-A: Instant payment via Cash, UPI (GPay, PhonePe, Paytm), or bank transfer — your choice.
+A: Instant payment via Cash, UPI (GPay, PhonePe, Paytm), or bank transfer - your choice.
 
 Check our [live scrap rates page](/scrap-rates) for today's exact rates or call us for a custom quote.`,
   },
   {
-    title: "How to Sell Scrap Online in India — Complete Guide 2024",
+    title: "How to Sell Scrap Online in India - Complete Guide 2024",
     slug: "how-to-sell-scrap-online-india",
     category: "Recycling",
     author: "SCRAPYARD Team",
     excerpt: "Step-by-step guide to selling scrap online in India. Get the best rates, find reliable buyers, and get paid instantly from the comfort of your home.",
     metaTitle: "How to Sell Scrap Online in India 2024 | SCRAPYARD Guide",
     metaDescription: "Complete guide to selling scrap online in India. Find best scrap buyers, get live rates, and book free doorstep pickup with instant payment.",
-    content: `# How to Sell Scrap Online in India — Complete Guide 2024
+    content: `# How to Sell Scrap Online in India - Complete Guide 2024
 
 Selling scrap in India has changed dramatically. Gone are the days of waiting for the local kabadiwala to come, getting cheated on weight, and receiving below-market rates. Today, platforms like **SCRAPYARD** make it possible to sell scrap online with complete transparency and instant payment.
 
@@ -99,26 +99,26 @@ Selling scrap in India has changed dramatically. Gone are the days of waiting fo
 Traditional scrap selling problems:
 - ❌ Kabadiwala arrives at inconvenient times
 - ❌ Inaccurate weighing (you always get less)
-- ❌ Below-market rates — no price transparency
+- ❌ Below-market rates - no price transparency
 - ❌ Delayed or cash-only payments
 - ❌ No receipt or documentation
 
 Selling scrap online with SCRAPYARD:
 - ✅ Book pickup at your convenient time
-- ✅ Certified digital weighing — accurate to 10 grams
-- ✅ Live market rates — exactly what the market pays
-- ✅ Instant payment — Cash, UPI, or bank transfer
+- ✅ Certified digital weighing - accurate to 10 grams
+- ✅ Live market rates - exactly what the market pays
+- ✅ Instant payment - Cash, UPI, or bank transfer
 - ✅ Receipt and documentation provided
 
 ## Step-by-Step: How to Sell Scrap Online
 
 ### Step 1: Know What You Have
 Identify your scrap type:
-- **Metal scrap** — iron, copper, aluminium, brass, steel
-- **Plastic scrap** — PET bottles, HDPE drums, PVC pipes
-- **Paper scrap** — newspapers, cardboard, office paper
-- **E-Waste** — old phones, laptops, TVs, wires
-- **Appliances** — old fridge, AC, washing machine
+- **Metal scrap** - iron, copper, aluminium, brass, steel
+- **Plastic scrap** - PET bottles, HDPE drums, PVC pipes
+- **Paper scrap** - newspapers, cardboard, office paper
+- **E-Waste** - old phones, laptops, TVs, wires
+- **Appliances** - old fridge, AC, washing machine
 
 ### Step 2: Check Live Rates
 Visit **scrapyard.co.in/scrap-rates** to see today's rates for your material. This gives you a fair expectation of what you'll receive.
@@ -150,25 +150,25 @@ After weighing, you receive payment **immediately** via your preferred method.
 
 ## Tips to Maximize Your Scrap Value
 
-1. **Sort before selling** — don't mix metals. Sorted scrap gets 15-20% better rates.
-2. **Clean the scrap** — remove dirt, oil, and attachments.
-3. **Sell in bulk** — accumulate scrap and sell in larger quantities for better rates.
-4. **Time the market** — check rates weekly and sell when prices are high.
-5. **Get documentation** — always ask for a receipt. SCRAPYARD provides itemized receipts.
+1. **Sort before selling** - don't mix metals. Sorted scrap gets 15-20% better rates.
+2. **Clean the scrap** - remove dirt, oil, and attachments.
+3. **Sell in bulk** - accumulate scrap and sell in larger quantities for better rates.
+4. **Time the market** - check rates weekly and sell when prices are high.
+5. **Get documentation** - always ask for a receipt. SCRAPYARD provides itemized receipts.
 
 Start selling smarter. [Book your free pickup today](/contact).`,
   },
   {
-    title: "Copper Scrap Rate Today — Live Prices Across India",
+    title: "Copper Scrap Rate Today - Live Prices Across India",
     slug: "copper-scrap-rate-today-india",
     category: "Metal Prices",
     author: "SCRAPYARD Team",
     excerpt: "Check today's copper scrap rate in India. Live copper prices updated daily. Find the best copper scrap buyer near you and get instant payment.",
     metaTitle: "Copper Scrap Rate Today in India | Live Copper Prices | SCRAPYARD",
     metaDescription: "Today's copper scrap rate in India: ₹480–520/kg. Check live copper prices city-wise, selling tips, and book free pickup with SCRAPYARD.",
-    content: `# Copper Scrap Rate Today — Live Prices Across India
+    content: `# Copper Scrap Rate Today - Live Prices Across India
 
-Copper is the **most valuable common scrap metal** in India. Whether you have old copper wires, pipes, motors, transformers, or utensils — SCRAPYARD offers the best copper scrap rate with free doorstep pickup and instant payment.
+Copper is the **most valuable common scrap metal** in India. Whether you have old copper wires, pipes, motors, transformers, or utensils - SCRAPYARD offers the best copper scrap rate with free doorstep pickup and instant payment.
 
 ## Today's Copper Scrap Rate in India
 
@@ -187,9 +187,9 @@ Copper is the **most valuable common scrap metal** in India. Whether you have ol
 
 Copper is a globally traded commodity. Indian copper scrap rates are influenced by:
 - **LME (London Metal Exchange)** prices
-- **USD/INR exchange rate** — copper is traded in dollars
+- **USD/INR exchange rate** - copper is traded in dollars
 - **Domestic demand** from electrical and construction sectors
-- **Seasonal factors** — demand peaks before summer (AC installations)
+- **Seasonal factors** - demand peaks before summer (AC installations)
 
 ## Types of Copper Scrap We Buy
 
@@ -219,11 +219,11 @@ SCRAPYARD buys all types of copper scrap including:
 
 ## How to Get Maximum Copper Scrap Rate
 
-1. **Remove insulation** from wires — bare copper gets 15-20% more than insulated wire
-2. **Separate copper grades** — don't mix thick wire with thin wire
-3. **Clean the copper** — remove solder, paint, and attachments
-4. **Know the weight** — use a home scale to estimate before the agent arrives
-5. **Compare rates** — SCRAPYARD guarantees market-rate pricing
+1. **Remove insulation** from wires - bare copper gets 15-20% more than insulated wire
+2. **Separate copper grades** - don't mix thick wire with thin wire
+3. **Clean the copper** - remove solder, paint, and attachments
+4. **Know the weight** - use a home scale to estimate before the agent arrives
+5. **Compare rates** - SCRAPYARD guarantees market-rate pricing
 
 ## Copper Scrap Rate by City
 
@@ -241,14 +241,14 @@ SCRAPYARD buys all types of copper scrap including:
 [Check all live scrap rates →](/scrap-rates) | [Book free pickup →](/contact)`,
   },
   {
-    title: "Kabadiwala vs SCRAPYARD — Which Gets You a Better Deal?",
+    title: "Kabadiwala vs SCRAPYARD - Which Gets You a Better Deal?",
     slug: "kabadiwala-vs-scrapyard-comparison",
     category: "Recycling",
     author: "SCRAPYARD Team",
-    excerpt: "Kabadiwala vs SCRAPYARD — an honest comparison. Who gives better rates, more convenience, and fairer service? The answer might surprise you.",
-    metaTitle: "Kabadiwala vs SCRAPYARD — Which is Better? | Honest Comparison",
+    excerpt: "Kabadiwala vs SCRAPYARD - an honest comparison. Who gives better rates, more convenience, and fairer service? The answer might surprise you.",
+    metaTitle: "Kabadiwala vs SCRAPYARD - Which is Better? | Honest Comparison",
     metaDescription: "Kabadiwala vs SCRAPYARD comparison: rates, weighing accuracy, payment, convenience. Find out why thousands switch to SCRAPYARD for scrap selling.",
-    content: `# Kabadiwala vs SCRAPYARD — Which Gets You a Better Deal?
+    content: `# Kabadiwala vs SCRAPYARD - Which Gets You a Better Deal?
 
 Most Indians have relied on the local kabadiwala for decades. He comes when he wants, quotes a rate you can't verify, uses a scale you can't trust, and pays whatever he feels like. Sound familiar?
 
@@ -260,7 +260,7 @@ SCRAPYARD was built to fix exactly this. Here's an honest, detailed comparison.
 |--------|-----------------|-----------|
 | **Rates** | 20-40% below market | Live market rates |
 | **Weighing** | Manual/spring scale (inaccurate) | Certified digital scale |
-| **Payment** | Cash only, sometimes delayed | Instant — Cash/UPI/Bank |
+| **Payment** | Cash only, sometimes delayed | Instant - Cash/UPI/Bank |
 | **Timing** | Comes when he wants | You choose the time |
 | **Documentation** | None | Itemized receipt |
 | **Booking** | Wait and shout from balcony | App/website/phone |
@@ -269,7 +269,7 @@ SCRAPYARD was built to fix exactly this. Here's an honest, detailed comparison.
 | **Materials** | Limited | All types |
 | **GST Receipt** | Never | Available |
 
-## The Rate Difference — Real Example
+## The Rate Difference - Real Example
 
 Let's say you have 100kg of iron scrap:
 
@@ -283,11 +283,11 @@ Let's say you have 100kg of iron scrap:
 - Digital scale: 100kg accurate
 - Pays: ₹32 × 100 = **₹3,200**
 
-**You earn ₹1,110 MORE with SCRAPYARD** — that's 53% extra for the same scrap.
+**You earn ₹1,110 MORE with SCRAPYARD** - that's 53% extra for the same scrap.
 
 ## The Weighing Problem
 
-This is the biggest fraud in the traditional scrap industry. Spring scales and old weighing machines are notoriously inaccurate — and always in the kabadiwala's favour.
+This is the biggest fraud in the traditional scrap industry. Spring scales and old weighing machines are notoriously inaccurate - and always in the kabadiwala's favour.
 
 SCRAPYARD agents carry **government-certified digital weighing scales** calibrated regularly. Every gram is counted. You can verify the weight yourself on our scale.
 
@@ -298,29 +298,29 @@ To be fair, the local kabadiwala makes sense for:
 - Immediate same-day pickup when you're in a hurry
 - Paper/cardboard where the rate difference is small
 
-For everything else — metals, e-waste, appliances, large quantities — SCRAPYARD gives you significantly better value.
+For everything else - metals, e-waste, appliances, large quantities - SCRAPYARD gives you significantly better value.
 
 ## What Our Customers Say
 
-*"I used to sell copper wire to the kabadiwala for ₹380/kg. SCRAPYARD paid me ₹505/kg for the same wire. I made ₹15,000 more on one sale."* — Rakesh M., Noida
+*"I used to sell copper wire to the kabadiwala for ₹380/kg. SCRAPYARD paid me ₹505/kg for the same wire. I made ₹15,000 more on one sale."* - Rakesh M., Noida
 
-*"The digital scale is the biggest difference. The kabadiwala always 'lost' 10% of my weight. SCRAPYARD weighed my scrap right in front of me."* — Suresh P., Delhi
+*"The digital scale is the biggest difference. The kabadiwala always 'lost' 10% of my weight. SCRAPYARD weighed my scrap right in front of me."* - Suresh P., Delhi
 
-## Try SCRAPYARD Once — We'll Prove the Difference
+## Try SCRAPYARD Once - We'll Prove the Difference
 
 Book your first free pickup at **scrapyard.co.in/contact** or call **+91 8505863220**. Compare what we pay vs your kabadiwala's last quote. We're confident you'll never go back.`,
   },
   {
-    title: "E-Waste Disposal in India — Complete Legal Guide 2024",
+    title: "E-Waste Disposal in India - Complete Legal Guide 2024",
     slug: "e-waste-disposal-guide-india-2024",
     category: "E-Waste",
     author: "SCRAPYARD Team",
     excerpt: "Complete guide to e-waste disposal in India. CPCB rules, what you can sell, what to do with old phones/laptops, and how to get paid for it.",
-    metaTitle: "E-Waste Disposal India 2024 — Complete Legal Guide | SCRAPYARD",
+    metaTitle: "E-Waste Disposal India 2024 - Complete Legal Guide | SCRAPYARD",
     metaDescription: "How to dispose e-waste legally in India. CPCB rules, EPR compliance, what old electronics are worth, and free e-waste pickup with SCRAPYARD.",
-    content: `# E-Waste Disposal in India — Complete Legal Guide 2024
+    content: `# E-Waste Disposal in India - Complete Legal Guide 2024
 
-India generates over **3.2 million tonnes of e-waste annually** — making it the 3rd largest e-waste generator in the world. Yet less than 20% is recycled properly. Improper e-waste disposal is not just harmful — it's illegal.
+India generates over **3.2 million tonnes of e-waste annually** - making it the 3rd largest e-waste generator in the world. Yet less than 20% is recycled properly. Improper e-waste disposal is not just harmful - it's illegal.
 
 Here's everything you need to know about disposing of e-waste legally and profitably in India.
 
@@ -343,7 +343,7 @@ India's e-waste is governed by the **E-Waste (Management) Rules, 2022** under th
 
 **Key points:**
 - Producers must meet **Extended Producer Responsibility (EPR)** targets
-- Businesses cannot dispose of e-waste in regular trash — it's illegal
+- Businesses cannot dispose of e-waste in regular trash - it's illegal
 - Only **CPCB-authorized recyclers** can process e-waste
 - Penalties for illegal disposal: up to ₹1 lakh fine + imprisonment
 
@@ -392,16 +392,16 @@ Call **+91 8505863220** or visit [scrapyard.co.in/contact](/contact).
 We serve Delhi, Mumbai, Bangalore, Hyderabad, Chennai, Pune, Noida, Gurgaon, Faridabad, and 20+ more cities.`,
   },
   {
-    title: "Scrap Price List India 2024 — All Materials & Live Rates",
+    title: "Scrap Price List India 2024 - All Materials & Live Rates",
     slug: "scrap-price-list-india-2024",
     category: "Metal Prices",
     author: "SCRAPYARD Team",
     excerpt: "Complete scrap price list for India 2024. Live rates for iron, copper, aluminium, brass, plastic, paper, e-waste and all materials. Updated daily.",
-    metaTitle: "Scrap Price List India 2024 — All Materials | SCRAPYARD Live Rates",
+    metaTitle: "Scrap Price List India 2024 - All Materials | SCRAPYARD Live Rates",
     metaDescription: "Complete scrap price list India 2024. Iron ₹28-35/kg, Copper ₹480-520/kg, Aluminium ₹100-120/kg. Live rates updated daily. Free pickup.",
-    content: `# Scrap Price List India 2024 — All Materials & Live Rates
+    content: `# Scrap Price List India 2024 - All Materials & Live Rates
 
-This is India's most comprehensive scrap price list, updated daily by SCRAPYARD's market team. Use these rates as a reference — actual rates may vary by city, quality, and quantity.
+This is India's most comprehensive scrap price list, updated daily by SCRAPYARD's market team. Use these rates as a reference - actual rates may vary by city, quality, and quantity.
 
 ## Metal Scrap Rates
 
@@ -482,8 +482,8 @@ Scrap rates in India change daily based on:
 1. **International metal prices** (LME, SHFE)
 2. **USD/INR exchange rate**
 3. **Domestic demand** from factories and recyclers
-4. **Quality of scrap** — clean, sorted scrap always gets better rates
-5. **Quantity** — bulk sellers get premium rates
+4. **Quality of scrap** - clean, sorted scrap always gets better rates
+5. **Quantity** - bulk sellers get premium rates
 
 ## Get Today's Exact Rate
 
@@ -500,7 +500,7 @@ Rates above are indicative. For **today's exact rate** in your city:
     category: "Recycling",
     author: "SCRAPYARD Team",
     excerpt: "Selling old AC, fridge, or washing machine? Get maximum scrap value with these insider tips. Free pickup, instant payment across India.",
-    metaTitle: "Best Price for Old AC Fridge Appliances — Sell Scrap | SCRAPYARD",
+    metaTitle: "Best Price for Old AC Fridge Appliances - Sell Scrap | SCRAPYARD",
     metaDescription: "Get best price for old AC, fridge, washing machine scrap. Tips to maximize value, current appliance scrap rates, and free pickup with SCRAPYARD.",
     content: `# How to Get the Best Price for Old AC, Fridge & Washing Machine
 
@@ -528,9 +528,9 @@ Every year, millions of old appliances are replaced across India. Most people ei
 Old appliances contain valuable raw materials:
 
 **Split AC contains:**
-- Copper (condenser coils, wiring) — ₹490/kg
-- Aluminium (fins) — ₹100/kg
-- Steel (body) — ₹32/kg
+- Copper (condenser coils, wiring) - ₹490/kg
+- Aluminium (fins) - ₹100/kg
+- Steel (body) - ₹32/kg
 - Compressor motor (copper winding)
 - Refrigerant gas (R22/R32)
 
@@ -540,7 +540,7 @@ Old appliances contain valuable raw materials:
 - Plastic (interior)
 - Compressor motor
 
-**This is why a dead AC is still worth ₹2,000+** — the copper and aluminium inside have real value.
+**This is why a dead AC is still worth ₹2,000+** - the copper and aluminium inside have real value.
 
 ## Tips to Get Maximum Value
 

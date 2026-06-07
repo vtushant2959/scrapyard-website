@@ -14,7 +14,7 @@ const reasons = [
   {
     icon: Zap,
     title: "Fast Pickup",
-    description: "Same-day pickup in most cities. Our fleet is always ready — no more waiting for days.",
+    description: "Same-day pickup in most cities. Our fleet is always ready - no more waiting for days.",
     color: "#6F9E62",
     stat: "Same Day",
   },
@@ -28,7 +28,7 @@ const reasons = [
   {
     icon: CreditCard,
     title: "Secure Payments",
-    description: "Instant UPI transfers, bank deposits, or cash — your choice, your security.",
+    description: "Instant UPI transfers, bank deposits, or cash - your choice, your security.",
     color: "#2CEB88",
     stat: "Instant UPI",
   },

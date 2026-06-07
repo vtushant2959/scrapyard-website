@@ -222,7 +222,7 @@ export default function AdminPage() {
             )}
             {dbStatus === "error" && (
               <span title={dbError} className="text-xs text-red-400 hidden sm:block cursor-help border border-red-400/30 px-2 py-0.5 rounded-full max-w-xs truncate">
-                ⚠ {dbError || "DB Error — check .env.local"}
+                ⚠ {dbError || "DB Error - check .env.local"}
               </span>
             )}
             <div className="w-7 h-7 rounded-full bg-accent-glow/20 flex items-center justify-center text-xs font-bold text-accent-glow ml-2">

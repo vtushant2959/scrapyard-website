@@ -4,7 +4,7 @@ import { Footer } from "@/components/layout/Footer";
 import { IndustriesPageContent } from "@/components/pages/IndustriesPageContent";
 
 export const metadata: Metadata = {
-  title: "Industries We Serve — Factories, Hotels, Warehouses & More | SCRAPYARD",
+  title: "Industries We Serve - Factories, Hotels, Warehouses & More | SCRAPYARD",
   description:
     "SCRAPYARD provides specialized scrap management solutions for factories, hotels, construction companies, warehouses, hospitals, educational institutions, and more.",
   alternates: { canonical: "https://scrapyard.co.in/industries" },

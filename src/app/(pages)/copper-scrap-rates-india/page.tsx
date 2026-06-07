@@ -5,7 +5,7 @@ import Link from "next/link";
 import { ArrowRight, TrendingUp, Phone } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Copper Scrap Rates in India Today — Live Prices | SCRAPYARD",
+  title: "Copper Scrap Rates in India Today - Live Prices | SCRAPYARD",
   description: "Today's copper scrap rates in India. Live copper prices by city (Delhi, Mumbai, Bangalore). Bare bright ₹510-530/kg. Free pickup with instant payment.",
   keywords: ["copper scrap rate today", "copper scrap price India", "copper rate today", "tamba ka rate", "copper wire rate", "copper scrap buyer near me"],
   alternates: { canonical: "https://scrapyard.co.in/copper-scrap-rates-india" },
@@ -18,7 +18,7 @@ const rates = [
   { type: "Copper Motor Winding",        rate: "₹420–450", desc: "From motors, transformers, fans." },
   { type: "Copper Transformer Scrap",    rate: "₹380–420", desc: "Old transformer copper with insulation." },
   { type: "Brass (Copper alloy)",        rate: "₹280–320", desc: "Yellow/red brass fittings, taps, valves." },
-  { type: "Copper Radiator",             rate: "₹200–280", desc: "Auto radiators — copper + aluminium." },
+  { type: "Copper Radiator",             rate: "₹200–280", desc: "Auto radiators - copper + aluminium." },
   { type: "Insulated Copper Wire",       rate: "₹250–350", desc: "Wire with plastic insulation intact." },
 ];
 

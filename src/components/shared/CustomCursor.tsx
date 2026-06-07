@@ -52,7 +52,7 @@ export function CustomCursor() {
 
   return (
     <>
-      {/* Outer ring — lags behind cursor */}
+      {/* Outer ring - lags behind cursor */}
       <motion.div
         className="fixed top-0 left-0 pointer-events-none z-[9998]"
         style={{ x: ringX, y: ringY, translateX: "-50%", translateY: "-50%" }}
@@ -83,7 +83,7 @@ export function CustomCursor() {
         />
       </motion.div>
 
-      {/* Inner dot — follows cursor exactly */}
+      {/* Inner dot - follows cursor exactly */}
       <motion.div
         className="fixed top-0 left-0 pointer-events-none z-[9999]"
         style={{ x: mouseX, y: mouseY, translateX: "-50%", translateY: "-50%" }}

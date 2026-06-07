@@ -63,11 +63,11 @@ const faqs = [
   },
   {
     q: "How is SCRAPYARD different from a local kabadiwala?",
-    a: "SCRAPYARD offers technology-driven operations with digital weighing (no cheating), live market rates (up to 20% better), instant digital payments, professional uniformed teams, legal documentation, and eco-certified recycling — a complete upgrade.",
+    a: "SCRAPYARD offers technology-driven operations with digital weighing (no cheating), live market rates (up to 20% better), instant digital payments, professional uniformed teams, legal documentation, and eco-certified recycling - a complete upgrade.",
   },
   {
     q: "Is there an app for SCRAPYARD?",
-    a: "Yes! The SCRAPYARD app is live on Google Play. Download it free at play.google.com/store/apps/details?id=com.scrapyardindia.app — book pickups, check live rates, and track agents. iOS version coming soon.",
+    a: "Yes! The SCRAPYARD app is live on Google Play. Download it free at play.google.com/store/apps/details?id=com.scrapyardindia.app - book pickups, check live rates, and track agents. iOS version coming soon.",
   },
   {
     q: "Can I get scrap picked up from a construction site?",

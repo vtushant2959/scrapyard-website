@@ -4,7 +4,7 @@ import { Footer } from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
   title: "Refund Policy | SCRAPYARD",
-  description: "SCRAPYARD Refund Policy — Our commitment to fair and transparent transactions.",
+  description: "SCRAPYARD Refund Policy - Our commitment to fair and transparent transactions.",
 };
 
 export default function RefundPage() {

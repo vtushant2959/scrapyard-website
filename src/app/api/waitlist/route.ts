@@ -1,4 +1,4 @@
-﻿export const dynamic = 'force-dynamic';
+export const dynamic = 'force-dynamic';
 import { NextRequest, NextResponse } from "next/server";
 import { connectDB } from "@/lib/mongodb";
 import { Waitlist } from "@/models/Waitlist";
@@ -21,7 +21,7 @@ export async function POST(req: NextRequest) {
       { upsert: true, new: true }
     );
 
-    // Send email alert — non-blocking
+    // Send email alert - non-blocking
     sendWaitlistAlert({ name, phone, email, city, userType }).catch(
       (err) => console.error("Waitlist email failed:", err)
     );

@@ -221,7 +221,7 @@ export function AdminScrapRates() {
         ))}
       </div>
 
-      {/* Rates table — inline editable */}
+      {/* Rates table - inline editable */}
       <div className="glass-card rounded-xl overflow-hidden">
         <div className="overflow-x-auto">
           <table className="w-full">

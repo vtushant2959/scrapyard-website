@@ -24,7 +24,7 @@ export async function sendLeadAlert(data: {
   await transporter.sendMail({
     from: `"SCRAPYARD Website" <${process.env.SMTP_USER}>`,
     to,
-    subject: `🔔 New Pickup Request — ${data.name} (${data.city || "Unknown City"})`,
+    subject: `🔔 New Pickup Request - ${data.name} (${data.city || "Unknown City"})`,
     html: `
       <div style="font-family:Arial,sans-serif;max-width:600px;margin:0 auto;background:#f9f9f9;padding:20px;border-radius:12px;">
         <div style="background:#081018;padding:24px;border-radius:10px;text-align:center;margin-bottom:20px;">
@@ -105,7 +105,7 @@ export async function sendWaitlistAlert(data: {
   await transporter.sendMail({
     from: `"SCRAPYARD Website" <${process.env.SMTP_USER}>`,
     to,
-    subject: `📱 New App Waitlist Signup — ${data.name}`,
+    subject: `📱 New App Waitlist Signup - ${data.name}`,
     html: `
       <div style="font-family:Arial,sans-serif;max-width:600px;margin:0 auto;background:#f9f9f9;padding:20px;border-radius:12px;">
         <div style="background:#081018;padding:24px;border-radius:10px;text-align:center;margin-bottom:20px;">

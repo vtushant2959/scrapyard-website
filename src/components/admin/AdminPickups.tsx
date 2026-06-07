@@ -185,14 +185,14 @@ export function AdminPickups() {
                         <td className="px-4 py-3 text-xs font-medium text-white">{p.name}</td>
                         <td className="px-4 py-3 text-xs text-text-muted font-mono">{p.phone}</td>
                         <td className="px-4 py-3 text-xs text-silver">{p.city}</td>
-                        <td className="px-4 py-3 text-xs text-silver">{p.scrapType || "—"}</td>
+                        <td className="px-4 py-3 text-xs text-silver">{p.scrapType || "-"}</td>
                         <td className="px-4 py-3 text-xs text-text-muted">
-                          {p.scheduledDate ? new Date(p.scheduledDate).toLocaleDateString("en-IN") : "—"}
+                          {p.scheduledDate ? new Date(p.scheduledDate).toLocaleDateString("en-IN") : "-"}
                           {p.scheduledSlot && <span className="ml-1 text-text-muted/60">{p.scheduledSlot}</span>}
                         </td>
-                        <td className="px-4 py-3 text-xs text-silver">{p.agentName || "—"}</td>
+                        <td className="px-4 py-3 text-xs text-silver">{p.agentName || "-"}</td>
                         <td className="px-4 py-3 text-xs font-bold text-white">
-                          {p.totalAmount ? `₹${p.totalAmount.toLocaleString("en-IN")}` : "—"}
+                          {p.totalAmount ? `₹${p.totalAmount.toLocaleString("en-IN")}` : "-"}
                         </td>
                         <td className="px-4 py-3">
                           <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${statusColor[p.status] ?? "bg-white/5 text-silver"}`}>
@@ -244,7 +244,7 @@ export function AdminPickups() {
                 {[
                   { icon: Phone,  v: selected.phone },
                   { icon: MapPin, v: selected.city },
-                  { icon: Truck,  v: selected.scrapType || "—" },
+                  { icon: Truck,  v: selected.scrapType || "-" },
                 ].map(({ icon: Icon, v }) => (
                   <div key={v} className="flex items-center gap-2 text-silver">
                     <Icon className="w-3.5 h-3.5 text-text-muted flex-shrink-0" />

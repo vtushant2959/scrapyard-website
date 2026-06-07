@@ -49,7 +49,7 @@ export default function WhatIsScrapPage() {
                 <strong className="text-white">Scrap</strong> refers to any material that has been used and is no longer needed in its current form, but still has value as a raw material for recycling or reprocessing. In India, scrap includes old metal items, discarded electronics, waste paper, plastic, and industrial by-products.
               </p>
               <p className="text-silver leading-relaxed">
-                Unlike garbage (which has no value), scrap is a <strong className="text-white">valuable commodity</strong>. India&apos;s scrap industry is worth over ₹5 lakh crore and employs millions. Every piece of iron, copper wire, or old AC you sell gets recycled into new products — saving energy and natural resources.
+                Unlike garbage (which has no value), scrap is a <strong className="text-white">valuable commodity</strong>. India&apos;s scrap industry is worth over ₹5 lakh crore and employs millions. Every piece of iron, copper wire, or old AC you sell gets recycled into new products - saving energy and natural resources.
               </p>
             </div>
 
@@ -79,7 +79,7 @@ export default function WhatIsScrapPage() {
               <div className="space-y-4 text-silver">
                 <p className="leading-relaxed"><strong className="text-white">1. Resource Conservation:</strong> Recycling scrap metal uses 60–95% less energy than mining virgin ore. 1 tonne of recycled steel saves 1.1 tonnes of iron ore, 630kg of coal, and 55kg of limestone.</p>
                 <p className="leading-relaxed"><strong className="text-white">2. Industrial Demand:</strong> Steel plants, copper refineries, and plastic recyclers constantly need raw material. Scrap is cheaper and more sustainable than mining, creating constant demand.</p>
-                <p className="leading-relaxed"><strong className="text-white">3. Global Market:</strong> Scrap prices are linked to international commodity markets (LME). Copper scrap in India follows global copper prices — which is why rates change daily.</p>
+                <p className="leading-relaxed"><strong className="text-white">3. Global Market:</strong> Scrap prices are linked to international commodity markets (LME). Copper scrap in India follows global copper prices - which is why rates change daily.</p>
                 <p className="leading-relaxed"><strong className="text-white">4. Government Support:</strong> India&apos;s government actively promotes recycling through the E-Waste Management Rules 2022 and Metal Recycling Policy, making scrap a regulated and supported industry.</p>
               </div>
             </div>

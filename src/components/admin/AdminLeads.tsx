@@ -173,7 +173,7 @@ export function AdminLeads() {
                         <td className="px-4 py-3 text-xs font-medium text-white">{lead.name}</td>
                         <td className="px-4 py-3 text-xs text-text-muted font-mono">{lead.phone}</td>
                         <td className="px-4 py-3 text-xs text-silver">{lead.city}</td>
-                        <td className="px-4 py-3 text-xs text-silver max-w-[100px] truncate">{lead.scrapType || "—"}</td>
+                        <td className="px-4 py-3 text-xs text-silver max-w-[100px] truncate">{lead.scrapType || "-"}</td>
                         <td className="px-4 py-3">
                           <span className={`text-xs px-2 py-0.5 rounded-full font-medium border ${statusColor[lead.status] ?? "bg-white/5 text-silver border-white/10"}`}>
                             {lead.status}
@@ -269,11 +269,11 @@ export function AdminLeads() {
                 <div className="grid grid-cols-2 gap-2 pt-1">
                   <div className="p-2 rounded-lg bg-white/3 border border-dark-border">
                     <p className="text-xs text-text-muted">Type</p>
-                    <p className="text-xs font-medium text-white mt-0.5">{selected.businessType || "—"}</p>
+                    <p className="text-xs font-medium text-white mt-0.5">{selected.businessType || "-"}</p>
                   </div>
                   <div className="p-2 rounded-lg bg-white/3 border border-dark-border">
                     <p className="text-xs text-text-muted">Scrap</p>
-                    <p className="text-xs font-medium text-white mt-0.5">{selected.scrapType || "—"}</p>
+                    <p className="text-xs font-medium text-white mt-0.5">{selected.scrapType || "-"}</p>
                   </div>
                 </div>
                 {selected.message && (

@@ -86,7 +86,7 @@ export function CareersPageContent() {
 
           <div className="mt-10 glass-card rounded-2xl p-8 text-center">
             <h3 className="text-xl font-black text-white mb-2" style={{ fontFamily: "var(--font-syne)" }}>Don&apos;t See Your Role?</h3>
-            <p className="text-text-muted text-sm mb-4">Send us your resume — we&apos;re always looking for exceptional talent.</p>
+            <p className="text-text-muted text-sm mb-4">Send us your resume - we&apos;re always looking for exceptional talent.</p>
             <a href="mailto:info@scrapyard.co.in" className="btn-primary text-sm px-6 py-3 inline-flex">
               Send Your Resume
             </a>

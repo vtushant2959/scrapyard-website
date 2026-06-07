@@ -147,7 +147,7 @@ export function ReviewsPageContent() {
           ) : reviews.length === 0 ? (
             <div className="text-center py-16 mb-16">
               <Star className="w-12 h-12 text-accent-glow/30 mx-auto mb-4" />
-              <p className="text-text-muted">No reviews yet — be the first to review!</p>
+              <p className="text-text-muted">No reviews yet - be the first to review!</p>
             </div>
           ) : (
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-16">

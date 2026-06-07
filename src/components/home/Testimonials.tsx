@@ -12,7 +12,7 @@ const testimonials = [
     company: "Steel Fab Industries, Faridabad",
     avatar: "RS",
     rating: 5,
-    text: "SCRAPYARD transformed how we handle factory scrap. We used to wait weeks for buyers, now we get same-day collection and instant payment. The rate transparency is excellent — no more haggling.",
+    text: "SCRAPYARD transformed how we handle factory scrap. We used to wait weeks for buyers, now we get same-day collection and instant payment. The rate transparency is excellent - no more haggling.",
     amount: "₹2.4 Lakh",
     period: "monthly",
     color: "#2CEB88",

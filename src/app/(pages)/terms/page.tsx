@@ -4,7 +4,7 @@ import { Footer } from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
   title: "Terms of Service | SCRAPYARD",
-  description: "SCRAPYARD Terms of Service — Usage terms, conditions, and your rights as a SCRAPYARD user.",
+  description: "SCRAPYARD Terms of Service - Usage terms, conditions, and your rights as a SCRAPYARD user.",
   alternates: { canonical: "https://scrapyard.co.in/terms" },
 };
 

@@ -141,7 +141,7 @@ export function AdminAnalytics() {
 
         {/* Leads last 7 days */}
         <div className="glass-card rounded-xl p-5">
-          <h3 className="text-sm font-bold text-white mb-4">New Leads — Last 7 Days</h3>
+          <h3 className="text-sm font-bold text-white mb-4">New Leads - Last 7 Days</h3>
           {data?.leadsLast7Days && data.leadsLast7Days.length > 0 ? (
             <div className="flex items-end gap-2 h-32">
               {(() => {

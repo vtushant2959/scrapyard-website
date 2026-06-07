@@ -132,7 +132,7 @@ export function BlogPageContent() {
           {!loading && filtered.length === 0 && (
             <div className="py-20 text-center">
               <p className="text-text-muted text-lg mb-2">No articles found</p>
-              <p className="text-text-muted text-sm">{search ? `No results for "${search}"` : "No published posts yet — check back soon!"}</p>
+              <p className="text-text-muted text-sm">{search ? `No results for "${search}"` : "No published posts yet - check back soon!"}</p>
             </div>
           )}
 

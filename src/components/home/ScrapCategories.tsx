@@ -48,7 +48,7 @@ export function ScrapCategories() {
             We Buy <span className="gradient-text">Everything</span>
           </h2>
           <p className="text-text-muted text-lg max-w-xl mx-auto">
-            From household scrap to industrial waste — we handle it all at the best market rates.
+            From household scrap to industrial waste - we handle it all at the best market rates.
           </p>
         </motion.div>
 

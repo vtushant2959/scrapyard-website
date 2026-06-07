@@ -9,7 +9,7 @@ const services = [
     id: "residential",
     icon: Home,
     title: "Residential Scrap Collection",
-    desc: "Schedule a free doorstep pickup for household scrap — newspapers, bottles, old appliances, metal, and more. We weigh, pay instantly, and recycle responsibly.",
+    desc: "Schedule a free doorstep pickup for household scrap - newspapers, bottles, old appliances, metal, and more. We weigh, pay instantly, and recycle responsibly.",
     color: "#2CEB88",
     features: ["Free doorstep service", "Digital weighing", "Instant UPI payment", "All scrap types", "WhatsApp booking"],
     badge: "Most Popular",
@@ -84,7 +84,7 @@ export function ServicesPageContent() {
             <h1 className="text-4xl md:text-5xl font-black text-white mb-4" style={{ fontFamily: "var(--font-syne)" }}>
               Complete <span className="gradient-text">Scrap Solutions</span>
             </h1>
-            <p className="text-text-muted text-lg">From single households to large factories — we handle all types of scrap with professionalism.</p>
+            <p className="text-text-muted text-lg">From single households to large factories - we handle all types of scrap with professionalism.</p>
           </motion.div>
         </div>
       </section>

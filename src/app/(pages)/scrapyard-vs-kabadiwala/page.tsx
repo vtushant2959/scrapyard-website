@@ -5,7 +5,7 @@ import Link from "next/link";
 import { ArrowRight, CheckCircle, XCircle } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "SCRAPYARD vs Traditional Kabadiwala — Who Gives Better Rate? | 2024",
+  title: "SCRAPYARD vs Traditional Kabadiwala - Who Gives Better Rate? | 2024",
   description: "Honest comparison: SCRAPYARD vs local kabadiwala. Who gives better scrap rates, accurate weighing, faster payment? Real example shows ₹1,000+ difference.",
   keywords: ["scrapyard vs kabadiwala", "online scrap vs kabadiwala", "kabadiwala alternative", "best scrap buyer India", "kabadi wala vs app"],
   alternates: { canonical: "https://scrapyard.co.in/scrapyard-vs-kabadiwala" },
@@ -13,12 +13,12 @@ export const metadata: Metadata = {
 
 const comparison = [
   { factor: "Scrap Rates",        sy: "Live market rates (up to 40% more)",     kab: "20–40% below market",           winner: "sy" },
-  { factor: "Weighing Method",    sy: "Certified digital scale — 100% accurate", kab: "Spring scale — often inaccurate", winner: "sy" },
+  { factor: "Weighing Method",    sy: "Certified digital scale - 100% accurate", kab: "Spring scale - often inaccurate", winner: "sy" },
   { factor: "Payment Speed",      sy: "Instant via Cash/UPI/Bank",              kab: "Cash only, sometimes delayed",    winner: "sy" },
   { factor: "Timing",             sy: "You choose the slot, 24/7",              kab: "Comes when he wants",             winner: "sy" },
   { factor: "Booking",            sy: "App/Website/WhatsApp",                   kab: "Shout from balcony or wait",      winner: "sy" },
   { factor: "Documentation",      sy: "Itemised receipt, GST invoice available", kab: "No receipt, no record",          winner: "sy" },
-  { factor: "Transparency",       sy: "100% — rate shown before pickup",        kab: "Zero — take it or leave it",      winner: "sy" },
+  { factor: "Transparency",       sy: "100% - rate shown before pickup",        kab: "Zero - take it or leave it",      winner: "sy" },
   { factor: "Material Coverage",  sy: "All types including e-waste, appliances", kab: "Limited to basic scrap",         winner: "sy" },
   { factor: "E-Waste Compliance", sy: "CPCB-certified, certificate provided",   kab: "Illegal disposal, no compliance", winner: "sy" },
   { factor: "Service Area",       sy: "30+ cities across India",                kab: "Your street only",                winner: "sy" },
@@ -128,7 +128,7 @@ export default function ScrapyardVsKabadiPage() {
                   </li>
                 ))}
               </ul>
-              <p className="text-silver text-sm mt-4">For everything else — metals, e-waste, appliances, bulk quantities — SCRAPYARD gives you significantly better value every time.</p>
+              <p className="text-silver text-sm mt-4">For everything else - metals, e-waste, appliances, bulk quantities - SCRAPYARD gives you significantly better value every time.</p>
             </div>
 
             {/* CTA */}

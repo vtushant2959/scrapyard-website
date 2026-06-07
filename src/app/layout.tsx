@@ -11,7 +11,7 @@ import { Toaster } from "react-hot-toast";
 export const metadata: Metadata = {
   metadataBase: new URL("https://scrapyard.co.in"),
   title: {
-    default: "SCRAPYARD — India's Smartest Scrap Marketplace | Buy, Sell & Recycle Scrap",
+    default: "SCRAPYARD - India's Smartest Scrap Marketplace | Buy, Sell & Recycle Scrap",
     template: "%s | SCRAPYARD",
   },
   description:
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     locale: "en_IN",
     url: "https://scrapyard.co.in",
     siteName: "SCRAPYARD",
-    title: "SCRAPYARD — India's Smartest Scrap Marketplace",
+    title: "SCRAPYARD - India's Smartest Scrap Marketplace",
     description:
       "Transform waste into value. Schedule free scrap pickup, get live scrap rates, and connect with verified buyers across India.",
     images: [
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "SCRAPYARD — India's Smartest Scrap Marketplace",
+        alt: "SCRAPYARD - India's Smartest Scrap Marketplace",
       },
     ],
   },
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@ScrapyardIndia",
     creator: "@ScrapyardIndia",
-    title: "SCRAPYARD — India's Smartest Scrap Marketplace",
+    title: "SCRAPYARD - India's Smartest Scrap Marketplace",
     description: "Transform waste into value with India's next-generation scrap platform.",
     images: ["/og-image.jpg"],
   },

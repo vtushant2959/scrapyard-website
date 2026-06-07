@@ -5,7 +5,7 @@ import Link from "next/link";
 import { Star, Download, CheckCircle, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Best Scrap Buying App in India 2024 — SCRAPYARD App Review",
+  title: "Best Scrap Buying App in India 2024 - SCRAPYARD App Review",
   description: "SCRAPYARD is India's best scrap buying app. Book free pickup, get live rates, instant UPI payment. Available on Google Play. 10,000+ downloads, 4.8★ rating.",
   keywords: ["best scrap buying app India", "scrap app India", "kabadi app", "online scrap app", "scrap pickup app", "scrapyard app"],
   alternates: { canonical: "https://scrapyard.co.in/best-scrap-buying-app-india" },
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 const PLAY_STORE = "https://play.google.com/store/apps/details?id=com.scrapyardindia.app";
 
 const features = [
-  { title: "Book Pickup in 30 Seconds", desc: "Select scrap type, choose time slot, confirm — done. No phone calls needed." },
+  { title: "Book Pickup in 30 Seconds", desc: "Select scrap type, choose time slot, confirm - done. No phone calls needed." },
   { title: "Live Scrap Rates", desc: "Today's rates for all scrap types updated daily. Know exactly what you'll get before booking." },
   { title: "Real-Time Agent Tracking", desc: "Track your pickup agent on map just like Zomato/Swiggy. Know exactly when they'll arrive." },
   { title: "Instant UPI Payment", desc: "Get paid in 60 seconds via UPI, GPay, PhonePe, or Paytm. Right at your doorstep." },
@@ -42,7 +42,7 @@ export default function BestScrapAppPage() {
             <h1 className="text-4xl md:text-5xl font-black text-white mb-4" style={{ fontFamily: "var(--font-syne)" }}>
               Best <span style={{ color: "#2CEB88" }}>Scrap Buying App</span> in India
             </h1>
-            <p className="text-text-muted text-lg mb-6">Why 10,000+ Indians trust SCRAPYARD to sell their scrap — and why you should too.</p>
+            <p className="text-text-muted text-lg mb-6">Why 10,000+ Indians trust SCRAPYARD to sell their scrap - and why you should too.</p>
             <div className="flex flex-wrap gap-4 justify-center mb-6">
               <div className="flex items-center gap-2">
                 {[...Array(5)].map((_, i) => <Star key={i} className="w-4 h-4 text-yellow-400 fill-yellow-400" />)}
@@ -93,7 +93,7 @@ export default function BestScrapAppPage() {
                 <p className="leading-relaxed"><strong className="text-white">Certified Digital Weighing:</strong> Our agents carry government-certified digital scales. No spring scales. No cheating. You see the weight on the screen.</p>
                 <p className="leading-relaxed"><strong className="text-white">Fastest Payment in India:</strong> UPI payment in under 60 seconds after weighing. No waiting for the agent to "come back tomorrow with cash."</p>
                 <p className="leading-relaxed"><strong className="text-white">Available 24/7:</strong> Book a pickup at 2 AM if you want. Our system accepts bookings round the clock for next-day or same-day service.</p>
-                <p className="leading-relaxed"><strong className="text-white">30+ Cities:</strong> Delhi, Mumbai, Bangalore, Hyderabad, Chennai, Pune, Noida, Gurgaon, Faridabad, Jaipur, and 20+ more cities — with new cities added every month.</p>
+                <p className="leading-relaxed"><strong className="text-white">30+ Cities:</strong> Delhi, Mumbai, Bangalore, Hyderabad, Chennai, Pune, Noida, Gurgaon, Faridabad, Jaipur, and 20+ more cities - with new cities added every month.</p>
               </div>
             </div>
 

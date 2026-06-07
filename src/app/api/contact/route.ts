@@ -1,4 +1,4 @@
-﻿export const dynamic = 'force-dynamic';
+export const dynamic = 'force-dynamic';
 import { NextRequest, NextResponse } from "next/server";
 import { connectDB } from "@/lib/mongodb";
 import { Lead } from "@/models/Lead";
@@ -16,7 +16,7 @@ export async function POST(req: NextRequest) {
     await connectDB();
     await Lead.create({ name, phone, email, city, businessType, scrapType, message, source: "website" });
 
-    // Send email alert — non-blocking so form doesn't fail if email fails
+    // Send email alert - non-blocking so form doesn't fail if email fails
     sendLeadAlert({ name, phone, email, city, businessType, scrapType, message }).catch(
       (err) => console.error("Lead email failed:", err)
     );

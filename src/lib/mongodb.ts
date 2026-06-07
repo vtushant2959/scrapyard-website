@@ -27,7 +27,7 @@ export async function connectDB() {
         bufferCommands: false,
         serverSelectionTimeoutMS: 15000,
         socketTimeoutMS: 15000,
-        family: 4, // force IPv4 — fixes ECONNREFUSED on some networks
+        family: 4, // force IPv4 - fixes ECONNREFUSED on some networks
       })
       .catch((err) => {
         // Reset cache so next call retries instead of reusing broken promise

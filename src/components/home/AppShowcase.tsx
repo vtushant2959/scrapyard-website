@@ -156,7 +156,7 @@ export function AppShowcase() {
               className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-semibold mb-5"
               style={{ background: "rgba(0,60,158,0.15)", border: "1px solid rgba(0,60,158,0.3)", color: "#6699ff" }}
             >
-              ✅ Mobile App — Now Live on Android
+              ✅ Mobile App - Now Live on Android
             </div>
 
             <h2
@@ -168,7 +168,7 @@ export function AppShowcase() {
             </h2>
 
             <p className="text-text-muted text-base leading-relaxed mb-8">
-              The SCRAPYARD app is your complete scrap management companion. Book pickups, track collections, get live rates, and receive instant payments — all in one place.
+              The SCRAPYARD app is your complete scrap management companion. Book pickups, track collections, get live rates, and receive instant payments - all in one place.
             </p>
 
             {/* Features grid */}

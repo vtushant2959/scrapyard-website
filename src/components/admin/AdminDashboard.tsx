@@ -154,7 +154,7 @@ export function AdminDashboard({ onNav }: { onNav: (v: string) => void }) {
                       <td className="px-4 py-3 text-xs font-medium text-white">{lead.name}</td>
                       <td className="px-4 py-3 text-xs text-text-muted font-mono">{lead.phone}</td>
                       <td className="px-4 py-3 text-xs text-silver">{lead.city}</td>
-                      <td className="px-4 py-3 text-xs text-silver">{lead.scrapType || "—"}</td>
+                      <td className="px-4 py-3 text-xs text-silver">{lead.scrapType || "-"}</td>
                       <td className="px-4 py-3">
                         <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${statusColor[lead.status] ?? "bg-white/5 text-silver"}`}>
                           {lead.status}

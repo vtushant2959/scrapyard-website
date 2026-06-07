@@ -103,8 +103,8 @@ export function AdminWaitlist() {
                     <tr key={e._id} className="border-b border-dark-border/50 hover:bg-white/2 transition-colors">
                       <td className="px-4 py-3 text-xs font-medium text-white">{e.name}</td>
                       <td className="px-4 py-3 text-xs text-text-muted font-mono">{e.phone}</td>
-                      <td className="px-4 py-3 text-xs text-silver">{e.email || "—"}</td>
-                      <td className="px-4 py-3 text-xs text-silver">{e.city || "—"}</td>
+                      <td className="px-4 py-3 text-xs text-silver">{e.email || "-"}</td>
+                      <td className="px-4 py-3 text-xs text-silver">{e.city || "-"}</td>
                       <td className="px-4 py-3">
                         <span className="text-xs px-2 py-0.5 rounded-full bg-accent-glow/10 text-accent-glow font-medium capitalize">
                           {e.userType || "General"}

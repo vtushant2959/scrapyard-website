@@ -126,7 +126,7 @@ export function AdminReviews() {
                         {r.title && <p className="text-xs font-medium text-white mb-0.5">{r.title}</p>}
                         <p className="text-xs text-text-muted line-clamp-2">{r.review}</p>
                       </td>
-                      <td className="px-4 py-3 text-xs text-silver">{r.scrapType || "—"}</td>
+                      <td className="px-4 py-3 text-xs text-silver">{r.scrapType || "-"}</td>
                       <td className="px-4 py-3">
                         <span className={`text-xs px-2 py-0.5 rounded-full font-medium capitalize ${statusColor[r.status]}`}>{r.status}</span>
                       </td>

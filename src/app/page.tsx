@@ -17,7 +17,7 @@ import { PartnersSection } from "@/components/home/PartnersSection";
 import { FAQSection } from "@/components/home/FAQSection";
 
 export const metadata: Metadata = {
-  title: "SCRAPYARD — India's Smartest Scrap Marketplace | Free Doorstep Pickup",
+  title: "SCRAPYARD - India's Smartest Scrap Marketplace | Free Doorstep Pickup",
   description:
     "Schedule free scrap pickup, get live scrap rates, and sell metal, plastic, paper, e-waste & industrial scrap at best prices. Trusted by 1000+ businesses across 50+ Indian cities.",
   alternates: { canonical: "https://scrapyard.co.in" },

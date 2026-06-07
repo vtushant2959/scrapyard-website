@@ -129,7 +129,7 @@ export function HeroSection() {
               }}
             >
               <span className="w-1.5 h-1.5 rounded-full bg-accent-glow animate-pulse" />
-              📱 SCRAPYARD App is Live — Download Now
+              📱 SCRAPYARD App is Live - Download Now
               <ArrowRight className="w-3 h-3" />
             </motion.div>
 

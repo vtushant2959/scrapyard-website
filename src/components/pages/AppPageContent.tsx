@@ -51,7 +51,7 @@ export function AppPageContent() {
                 <span className="gradient-text">In Your Pocket</span>
               </h1>
               <p className="text-lg text-text-muted leading-relaxed mb-8 max-w-lg">
-                The SCRAPYARD app is live! Book pickups, track collections, get live scrap rates, and receive instant payments — all from your phone. Download now and get the best scrap rates in India.
+                The SCRAPYARD app is live! Book pickups, track collections, get live scrap rates, and receive instant payments - all from your phone. Download now and get the best scrap rates in India.
               </p>
 
               {/* App store buttons */}

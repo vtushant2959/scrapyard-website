@@ -69,7 +69,7 @@ export default function AdminLoginPage() {
             <h1 className="text-xl font-black text-white" style={{ fontFamily: "var(--font-syne)" }}>
               Admin Panel
             </h1>
-            <p className="text-xs text-text-muted mt-1">SCRAPYARD — Restricted Access</p>
+            <p className="text-xs text-text-muted mt-1">SCRAPYARD - Restricted Access</p>
           </div>
 
           {/* Form */}

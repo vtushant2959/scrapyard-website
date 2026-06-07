@@ -17,7 +17,7 @@ const SUGGESTIONS = [
 
 const WELCOME: Message = {
   role: "assistant",
-  content: "👋 Hi! I'm **SCRAP AI**, your SCRAPYARD assistant — available **24/7**!\n\nI can help you with scrap pickup booking, today's rates, service areas, and anything else. How can I help you?",
+  content: "👋 Hi! I'm **SCRAP AI**, your SCRAPYARD assistant - available **24/7**!\n\nI can help you with scrap pickup booking, today's rates, service areas, and anything else. How can I help you?",
 };
 
 function renderText(text: string) {
