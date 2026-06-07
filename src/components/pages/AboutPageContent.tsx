@@ -18,7 +18,7 @@ const milestones = [
   { year: "2024", event: "Series A Fundraise", desc: "Raised seed funding to expand operations" },
   { year: "2025", event: "50 Cities", desc: "Expanded to 50+ cities with 200+ verified collection partners" },
   { year: "2025", event: "1000+ Businesses", desc: "Reached 1,000+ business clients across India" },
-  { year: "2026", event: "App Launch", desc: "SCRAPYARD mobile app launching for Android & iOS" },
+  { year: "2025", event: "App Launch", desc: "SCRAPYARD app launched on Google Play — 10,000+ downloads" },
 ];
 
 export function AboutPageContent() {

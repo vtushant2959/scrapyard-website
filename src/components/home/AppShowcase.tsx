@@ -156,7 +156,7 @@ export function AppShowcase() {
               className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-semibold mb-5"
               style={{ background: "rgba(0,60,158,0.15)", border: "1px solid rgba(0,60,158,0.3)", color: "#6699ff" }}
             >
-              📱 Mobile App Coming Soon
+              ✅ Mobile App — Now Live on Android
             </div>
 
             <h2
@@ -196,19 +196,19 @@ export function AppShowcase() {
             {/* Download buttons */}
             <div className="flex flex-wrap gap-3">
               <a
-                href="https://play.google.com/store"
+                href="https://play.google.com/store/apps/details?id=com.scrapyardindia.app"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 px-5 py-3 rounded-xl font-medium text-sm transition-all duration-300 hover:scale-105"
                 style={{
-                  background: "rgba(44,235,136,0.08)",
-                  border: "1px solid rgba(44,235,136,0.2)",
+                  background: "rgba(44,235,136,0.12)",
+                  border: "1.5px solid rgba(44,235,136,0.35)",
                   color: "#C8CDD5",
                 }}
               >
                 <span className="text-2xl">▶</span>
                 <div className="text-left">
-                  <p className="text-xs text-text-muted leading-none">Get it on</p>
+                  <p className="text-xs text-text-muted leading-none">Download Free on</p>
                   <p className="text-sm font-bold text-white">Google Play</p>
                 </div>
               </a>
@@ -218,12 +218,12 @@ export function AppShowcase() {
                 className="flex items-center gap-2 px-5 py-3 rounded-xl font-medium text-sm btn-secondary"
               >
                 <Download className="w-4 h-4" />
-                Join Waitlist
+                Learn More
               </Link>
             </div>
 
             <p className="text-xs text-text-muted mt-4">
-              🎁 First 10,000 users get ₹500 bonus on first pickup.
+              📱 Free to download · Available on Android · iOS coming soon
             </p>
           </motion.div>
         </div>

@@ -47,7 +47,7 @@ const faqs = [
   },
   {
     q: "Can I track my pickup in real time?",
-    a: "Yes, through our mobile app (launching soon), you can track your pickup agent's location, ETA, and get live notifications. Via WhatsApp, we send you updates at every stage.",
+    a: "Yes! Download the SCRAPYARD app (live on Google Play) to track your pickup agent's location, ETA, and get live notifications. Via WhatsApp, we also send you updates at every stage.",
   },
   {
     q: "How does SCRAPYARD handle e-waste responsibly?",
@@ -67,7 +67,7 @@ const faqs = [
   },
   {
     q: "Is there an app for SCRAPYARD?",
-    a: "The SCRAPYARD app is launching soon on Android and iOS. Join the waitlist on our App page to be among the first users and get a ₹500 bonus on your first pickup.",
+    a: "Yes! The SCRAPYARD app is live on Google Play. Download it free at play.google.com/store/apps/details?id=com.scrapyardindia.app — book pickups, check live rates, and track agents. iOS version coming soon.",
   },
   {
     q: "Can I get scrap picked up from a construction site?",

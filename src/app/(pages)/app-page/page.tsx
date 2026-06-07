@@ -4,10 +4,10 @@ import { Footer } from "@/components/layout/Footer";
 import { AppPageContent } from "@/components/pages/AppPageContent";
 
 export const metadata: Metadata = {
-  title: "SCRAPYARD App — Coming Soon on Android & iOS | Join Waitlist",
+  title: "SCRAPYARD App — Download Now on Google Play | Best Scrap App India",
   description:
-    "The SCRAPYARD mobile app is launching soon. Schedule pickups, track collections, get live scrap rates, and receive instant payments. Join the waitlist and get ₹500 bonus.",
-  alternates: { canonical: "https://scrapyard.co.in/app" },
+    "Download the SCRAPYARD app free on Google Play. Book scrap pickup, track agent live, get live scrap rates, and receive instant UPI payment — all from your phone. 10,000+ downloads.",
+  alternates: { canonical: "https://scrapyard.co.in/app-page" },
 };
 
 export default function AppPage() {

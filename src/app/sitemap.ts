@@ -10,6 +10,20 @@ const cities = [
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  const seoPages = [
+    "what-is-scrap",
+    "how-to-sell-scrap-online",
+    "copper-scrap-rates-india",
+    "best-scrap-buying-app-india",
+    "scrapyard-vs-kabadiwala",
+    "reviews",
+  ].map((slug) => ({
+    url: `${baseUrl}/${slug}`,
+    lastModified: new Date(),
+    changeFrequency: "weekly" as const,
+    priority: 0.8,
+  }));
+
   const staticPages = [
     { url: baseUrl, lastModified: new Date(), changeFrequency: "daily" as const, priority: 1 },
     { url: `${baseUrl}/about`, lastModified: new Date(), changeFrequency: "weekly" as const, priority: 0.9 },
@@ -33,5 +47,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.85,
   }));
 
-  return [...staticPages, ...cityPages];
+  return [...staticPages, ...seoPages, ...cityPages];
 }

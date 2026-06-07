@@ -129,7 +129,7 @@ export function HeroSection() {
               }}
             >
               <span className="w-1.5 h-1.5 rounded-full bg-accent-glow animate-pulse" />
-              🚀 SCRAPYARD App Launching Soon
+              📱 SCRAPYARD App is Live — Download Now
               <ArrowRight className="w-3 h-3" />
             </motion.div>
 
@@ -214,10 +214,10 @@ export function HeroSection() {
                 <Truck className="w-4 h-4" />
                 Get Scrap Pickup
               </Link>
-              <Link href="/app-page" className="btn-secondary text-sm px-6 py-3.5">
+              <a href="https://play.google.com/store/apps/details?id=com.scrapyardindia.app" target="_blank" rel="noopener noreferrer" className="btn-secondary text-sm px-6 py-3.5 flex items-center gap-2">
                 <Download className="w-4 h-4" />
                 Download App
-              </Link>
+              </a>
               <Link
                 href="#how-it-works"
                 className="flex items-center gap-2 px-4 py-3.5 text-sm text-text-muted hover:text-white transition-colors"
